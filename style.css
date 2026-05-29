@@ -20,7 +20,7 @@
 
 .plato{
     width:100%; 
-    padding: 20px 15px;
+    padding: 19px 15px;
     box-sizing: border-box;
 }
 
@@ -113,7 +113,9 @@
     transition: 0.5s all;
     background-color: #4e7b7b;
 }
-
+.btn_squed{
+    margin: 20px 4px;
+}
 
 .btn_spec1{
     background-color: #893EAF;
@@ -121,6 +123,19 @@
     transition: 0.5s all;
     background-color: #772d9c;
 }
+
+
+
+
+
+.remove{
+    background-color: #c12847;
+}.remove:hover{
+    transition: 0.5s all;
+    background-color: #ac1a37;
+}
+
+
 
 .btn_spec2{
     background-color: #FF8A31;
