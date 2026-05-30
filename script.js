@@ -5,6 +5,7 @@ let minus = document.querySelector('.minus');
 let result = document.querySelector('.result');
 let inpt_result = document.querySelector('.inpt_result');
 let btn_clear = document.querySelector('.btn_clear');
+let btn_remove = document.querySelector('.remove');
 
 
 function clearr(params) {
@@ -20,12 +21,23 @@ function inpOut() {
     inpt_result.textContent = result;
 }
 
+
 btn.forEach(el=>{
     el.addEventListener('click', (e)=>{
-    inpt.value += e.target.textContent;
+    inpt.value += e.target.textContent;  
 });
 })
+
+
+btn_remove.addEventListener('click', ()=>{
+    inpt.value = inpt.value.trim().slice(0, -1);   
+});
+
+
 
 result.addEventListener('click', ()=>{
     inpOut()
 });
+
+
+
